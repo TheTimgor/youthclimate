@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slacc</title>
+	<style type="text/css">
+		body {
+			perspective: 461px;
+}
+		#main {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+		}
+		#main > img {
+			height: 500px;
+		}
+		#container {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 400px;
+			height: 300px;
+			background-color: #fff;
+			transform: 
+				rotateX(2.5deg) 
+				rotateY(-15.2deg) 
+				rotateZ(-2.8deg) 
+				translate3d(13.1px, 87.3px, -2.2px);
+		}
+
+		#inner {
+			position: absolute;
+			left: 0;
+
+		}
+
+		#container iframe {
+			border: none;
+	/*		width: 400px;
+			height: 300px;*/
+		}
+	</style>
+	<script type="text/javascript">
+		function reload(){
+			ids = [
+				"kuNixp-wvWM", // FUKKIRETA
+				"SBEmMM7ID2Y", // clown honk followed by gunshot
+				"WibFGyDMmYA", // Undertale Megolovania 
+				"Vhh_GeBPOhs", // Steve Ballmer: Developers
+				"IbfUuekFc2Q", // hatsune miku ACTUALLY screaming for 5 minutes
+				"0KOilt6VytA", // Only the unknown frightens men. But once a man has faced the unknown, that terror becomes the known
+				"HJ1vOuny6Cw", // VHS Logo - FOR THE LOVE OF GOD...
+				"bhGIf8KP2-w", // eeughh
+				"amVLRhN-2CI", // haircut.mp4
+				"dX-EAfsK-qA", // old town bone
+				"tA3B1NxzmGk", // sneeze
+				"_3X61zDcu4s", // MONEY, MONEY, MONEY, MONEY, MONEY, MOTHERFUCKER (undertale)
+				"I-sH53vXP2A", // "Fallen Kingdom" - A Minecraft Parody of Coldplay's Viva la Vida (Music Video)
+				"dQw4w9WgXcQ", // Rick Astley - Never Gonna Give You Up (Video)
+				"wBBOcCe9Mak", // baldo mode
+				"2YdhzT5b3AU", // Meme Compilation Guy Falls And Hurts His Channel
+				"vMx2ZexoXWc", // The World is Unfair
+				"yBjBXpAleig", // Freddie Mercury Rides a Roller Coaster
+				"OXQwx1EolD8", // Rats, we're rats; we're the rats.
+				"vdVnnMOTe3Q", // Rats Birthday Mixtape
+				"cPJUBQd-PNM"  // "Revenge" - A Minecraft Parody of Usher's DJ Got Us Fallin' In Love (Music Video)
+
+			]
+			choice = ids[Math.floor(Math.random() * ids.length)];
+			document.getElementById('frame').src = "https://youtube.com/embed/" + choice + "?&autoplay=1";
+			console.log("load")
+		}
+		window.onload = reload;
+	</script>
+</head>
+<body>
+	<div id="main">
+		<img src="slacc.jpg" onclick="reload()">
+		<div id="container">
+			<div id="inner">
+				<iframe width="431" height="300" id="frame" ></iframe>
+				<!-- <iframe width="400" height="300" src="https://youtube.com/embed/kuNixp-wvWM" id="frame" ></iframe> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

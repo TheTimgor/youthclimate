@@ -1,1 +1,1 @@
-top kek lol
+godawful website for ny2cl
